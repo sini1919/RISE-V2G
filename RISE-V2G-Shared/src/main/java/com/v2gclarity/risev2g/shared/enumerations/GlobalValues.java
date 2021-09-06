@@ -31,10 +31,11 @@ import com.v2gclarity.risev2g.shared.utils.ByteUtils;
 public enum GlobalValues {
 	/* File paths to the configuration files for EVCC and SECC. It must be possible to modify them on the EV or charging station,
 	 * which means that they must not be kept inside the JAR (which is read-only). We put those properties files at the same
-	 * level as the JAR. 
+	 * level as the JAR.
+	 * SECC_CONFIG_PROPERTIES_PATH("./SECCConfig.properties"), 
 	 */
 	EVCC_CONFIG_PROPERTIES_PATH("./EVCCConfig.properties"),
-	SECC_CONFIG_PROPERTIES_PATH("./SECCConfig.properties"),
+	SECC_CONFIG_PROPERTIES_PATH("rise-v2g-secc/SECCConfig.properties"),
 	
 	/*
 	 * TODO THIS IS NOT A SECURE WAY OF STORING A PASSWORD FOR THE CERTIFICATES' KEYS
